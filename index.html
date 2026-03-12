@@ -14,54 +14,57 @@
         <link rel="shortcut icon" href="checklist.png" type="image/x-icon">
         <title>To Do List</title>
     </head>
-    <main class="ml-5 mt-8">
+    <main class="m-8">
         <section id="previous-task">
-            <div>
+            <div class="flex-1">
                 <h3 class="text-4xl">Hey there</h3>
                 <p class="text-xl mt-2 text-gray-500">Organize your plans for the day.</p>
             </div>
-            <div class="tasks mt-10">
+            <div class="tasks mt-10 flex-2">
                 <!-- Title -->
                 <h2 class="text-2xl mb-4">Today's task</h2>
-                <div class="w-[400px] space-y-4" id="task-parent">
-                    <div class="task-card p-6 bg-gray-100 flex justify-between items-center
-             rounded-2xl">
+                <div class="w-full max-w-[400px] space-y-4" id="task-parent">
+                    <div class="task-card p-6 bg-gray-100 flex justify-between items-center gap-4 rounded-2xl shadow-xl border border-blue-300">
                         <input type="checkbox" class="checkbox checkbox-primary" />
-                        <p class="text-[16px]">Lorem ipsum dolor sit.</p>
+                        <p class="text-[16px] flex-1">Complete JavaScript assignment</p>
                         <button class="btn delete-btn rounded-2xl bg-blue-600 text-white"><i
                                 class="pointer-events-none fa-regular fa-trash-can"></i></button>
                     </div>
-                    <div class="task-card p-6 bg-gray-100 flex justify-between items-center rounded-2xl">
+                    <div class="task-card p-6 bg-gray-100 flex justify-between items-center gap-4 rounded-2xl shadow-xl border border-blue-300">
                         <input type="checkbox" class="checkbox checkbox-primary" />
-                        <p class="text[16px]">Lorem ipsum dolor sit.</p>
+                        <p class="text[16px] flex-1">Push to-do list project to GitHub
+                        </p>
                         <button class="btn delete-btn rounded-2xl bg-blue-600 text-white"><i
                                 class="pointer-events-none fa-regular fa-trash-can"></i></button>
                     </div>
-                    <div class="task-card p-6 bg-gray-100 flex justify-between items-center rounded-2xl">
+                    <div class="task-card p-6 bg-gray-100 flex justify-between items-center gap-4 rounded-2xl  shadow-xl border border-blue-300">
                         <input type="checkbox" class="checkbox checkbox-primary" />
-                        <p class="text[16px]">Lorem ipsum dolor sit.</p>
+                        <p class="text[16px] flex-1">Watch Node.js intro video
+                        </p>
                         <button class="btn delete-btn rounded-2xl bg-blue-600 text-white"><i
                                 class="pointer-events-none fa-regular fa-trash-can"></i></button>
                     </div>
-                    <div class="task-card p-6 bg-gray-100 flex justify-between items-center rounded-2xl">
+                    <div class="task-card p-6 bg-gray-100 flex justify-between items-center gap-4 rounded-2xl shadow-xl border border-blue-300">
                         <input type="checkbox" class="checkbox checkbox-primary" />
-                        <p class="text[16px]">Lorem ipsum dolor sit.</p>
+                        <p class="text[16px] flex-1">Review today's lecture notes
+                        </p>
                         <button class="btn delete-btn rounded-2xl bg-blue-600 text-white"><i
                                 class="pointer-events-none fa-regular fa-trash-can"></i></button>
                     </div>
-                    <div class="task-card p-6 bg-gray-100 flex justify-between items-center rounded-2xl">
+                    <div class="task-card p-6 bg-gray-100 flex justify-between items-center gap-4 rounded-2xl shadow-xl border border-blue-300">
                         <input type="checkbox" class="checkbox checkbox-primary" />
-                        <p class="text[16px]">Lorem ipsum dolor sit.</p>
+                        <p class="text[16px] flex-1">Practice array methods for 30 mins
+                        </p>
                         <button class="btn delete-btn rounded-2xl bg-blue-600 text-white "><i
                                 class="pointer-events-none fa-regular fa-trash-can"></i></button>
                     </div>
                 </div>
                 <button id="add-new-btn"
-                    class="btn text-xl disabled font-medium h-20 rounded-2xl w-[400px] mt-4 bg-blue-600 text-white">
+                    class="btn text-xl disabled font-medium h-20 rounded-2xl w-full max-w-[400px] mt-4 bg-blue-600 text-white shadow-blue-500">
                     <i class="fa-regular fa-plus"></i> Add a new task
                 </button>
         </section>
-        <section id="new-task" class="hidden">
+        <section id="new-task" class="hidden flex flex-col">
             <div class="mb-10">
                 <!-- tittle -->
                 <button id="back-btn" class="btn rounded-full mb-2">
@@ -70,10 +73,10 @@
                 <h3 class="text-3xl">Add task</h3>
                 <p class="text-xl mt-5">Label</p>
             </div>
-            <textarea name="" id="text-input" placeholder="create Instagram post"
-                class="w-[90%] p-3 border border-gray-300 rounded-xl resize-none outline-none focus:border-blue-500 text-base"></textarea>
+            <textarea id="text-input" placeholder="create Instagram post"
+                class="p-3 w-full max-w-[400px] border border-gray-300 rounded-xl resize-none outline-none focus:border-blue-500 text-base"></textarea>
             <button id="create-task"
-                class="btn text-xl font-medium h-20 rounded-2xl w-[400px] mt-4 bg-blue-600 text-white">
+                class="btn text-xl font-medium h-20 rounded-2xl w-full max-w-[400px] mt-4 bg-blue-600 text-white">
                 Create task
             </button>
         </section>
